@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/elliottpolk/monsters/dice"
+	"github.com/unicornemma/monsters/dice"
 )
 
 type MonsterCard Card

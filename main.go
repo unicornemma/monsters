@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/elliottpolk/monsters/actions"
-	"github.com/elliottpolk/monsters/cards"
+	"github.com/unicornemma/monsters/actions"
+	"github.com/unicornemma/monsters/cards"
 )
 
 func main() {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/elliottpolk/monsters/dice"
+	"github.com/unicornemma/monsters/dice"
 )
 
 type HeroCard Card
