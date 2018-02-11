@@ -73,7 +73,12 @@ func SelectHero() (*HeroCard, error) {
 		}
 	}
 
-	return Heroes[num-1], nil
+	h := Heroes[num-1]
+	return &HeroCard{
+		Name:     h.Name,
+		Strength: h.Strength,
+		Health:   h.Health,
+	}, nil
 }
 
 func (h *HeroCard) Attack(monster *MonsterCard) int64 {

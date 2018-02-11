@@ -40,7 +40,13 @@ var Monsters = []*MonsterCard{
 
 func RandomMonster() *MonsterCard {
 	rando := rand.New(rand.NewSource(time.Now().UnixNano()))
-	return Monsters[rando.Intn(len(Monsters))]
+
+	m := Monsters[rando.Intn(len(Monsters))]
+	return &MonsterCard{
+		Name:     m.Name,
+		Strength: m.Strength,
+		Health:   m.Health,
+	}
 }
 func (m *MonsterCard) Attack(hero *HeroCard) int64 {
 	roll := dice.Roll()
